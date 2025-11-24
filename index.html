@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025학년도 수시 지원 시뮬레이터</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Montserrat:wght@500;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <div id="ui-layer">
+        <div class="text-center px-4 z-10">
+            <p class="sub-text title-reveal delay-1">FUTURE ADMISSION SYSTEM</p>
+            
+            <h1 class="main-title title-reveal delay-2">
+                2025학년도<br>수시 지원 시뮬레이터
+            </h1>
+            
+            <p class="description title-reveal delay-3">
+                당신의 미래가 결정되는 순간,<br>가장 완벽한 전략을 수립하세요.
+            </p>
+            
+            <div class="btn-wrapper title-reveal delay-4">
+                <button id="apply-btn" class="glow-button">
+                    원서 접수 시작
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-info title-reveal delay-4">
+            초록 물결이 톡톡 튀는 젊음처럼 - 안규례 시인
+        </div>
+    </div>
+
+    <div id="custom-alert" class="modal-overlay">
+        <div class="glass-panel modal-content">
+            <div class="modal-icon-wrapper">
+                <div class="modal-icon">!</div>
+            </div>
+            <h2 class="text-2xl font-bold mb-2 text-white">접수 마감</h2>
+            <p class="text-gray-300 mb-8 leading-relaxed">
+                2025학년도 수시 원서 접수 기간이<br>
+                <span class="text-red-400 font-bold">공식적으로 종료되었습니다.</span><br>
+                다음 기회를 이용해 주시기 바랍니다.
+            </p>
+            <button id="close-btn" class="close-button">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
